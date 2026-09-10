@@ -1,0 +1,55 @@
+{
+  "name": "@roobli/canvas",
+  "version": "0.1.0",
+  "description": "Paper-chrome React primitives for Noto canvases and anything else that wants the same surfaces.",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "author": "roobli",
+  "homepage": "https://github.com/roobli/canvas",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roobli/canvas.git"
+  },
+  "bugs": {
+    "url": "https://github.com/roobli/canvas/issues"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepare": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "verify": "pnpm typecheck && pnpm test && pnpm build"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.3.0",
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "jsdom": "^27.0.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "typescript": "^5.9.2",
+    "vitest": "^4.1.11"
+  },
+  "packageManager": "pnpm@11.18.0",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
