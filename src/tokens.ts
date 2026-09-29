@@ -1,5 +1,5 @@
 /**
- * Noto paper tokens, copied from src/renderer/styles/_roob-tokens.scss
+ * Noto paper tokens, copied from src/renderer/styles/_tokens.scss
  * (copied 2026-08-28 in that tree). A canvas is chrome sitting next to a
  * document, so it uses the same palette rather than a second one.
  */
