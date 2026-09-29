@@ -1,5 +1,9 @@
 # @roobli/canvas
 
+> **Experimental.** Frozen until Noto decides to host canvas documents; the API
+> may change, or the package may be retired. See decision D6 in
+> [Noto's direction](https://roobli.github.io/Noto.docs/direction/decisions).
+
 React primitives for a Noto canvas: a live document of tables, stats and
 short findings, not a Markdown note. The shapes match what a Cursor
 `.canvas.tsx` file already uses (`Stack`, `Table`, `Callout`, `useHostTheme`),
